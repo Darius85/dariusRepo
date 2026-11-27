@@ -24,11 +24,11 @@ nav { display: flex; gap: clamp(.8rem, 3vw, 2rem); flex-wrap: wrap; }
 nav a, .nav-contact { text-decoration: none; font-weight: 600; }
 nav a:hover, .nav-contact:hover, .text-link:hover { text-decoration: underline; text-underline-offset: .25em; }
 .nav-contact { border: 1px solid var(--border); padding: .55rem .9rem; border-radius: .35rem; }
-.hero, .contact { background: var(--dark); color: #f7faf5; }
+.hero { background: var(--dark); color: #f7faf5; }
 .hero { border-bottom: 1px solid #304135; background: radial-gradient(ellipse at 78% 60%, #263a2c, var(--dark) 58%); }
 .hero-grid { display: grid; grid-template-columns: 1.3fr 1fr; align-items: center; gap: 2rem; padding-block: clamp(4rem, 8vw, 8rem); }
 .eyebrow { color: var(--green); text-transform: uppercase; letter-spacing: .15em; font-size: .875rem; font-weight: 750; margin: 0 0 1rem; }
-.hero .eyebrow, .contact .eyebrow { color: var(--accent); }
+.hero .eyebrow { color: var(--accent); }
 h1, h2, h3 { line-height: 1.08; margin: 0; }
 h1 { font-size: clamp(2.85rem, 6.6vw, 5.5rem); letter-spacing: -.07em; }
 h1 em { display: block; color: var(--accent); font-style: normal; }
@@ -56,9 +56,8 @@ h3 { font-size: 1.28rem; }
 .band { background: #edf2ed; border-block: 1px solid var(--border); }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 3rem; align-items: center; }
 .split p:not(.eyebrow) { margin-top: 0; }
-.text-link, .contact .button { display: inline-flex; margin-top: 1rem; }
+.text-link { display: inline-flex; margin-top: 1rem; }
 .text-link { color: var(--green); font-weight: 750; }
-.contact .split p:not(.eyebrow) { color: #cbd6cc; }
 .footer { background: #fff; }
 @media (max-width: 44rem) {
   .hero-grid, .split { grid-template-columns: 1fr; }
@@ -71,4 +70,25 @@ h3 { font-size: 1.28rem; }
 @media (max-width: 23rem) {
   .wrap { width: calc(100% - 2rem); }
   nav { column-gap: .65rem; }
+}
+
+.whatsapp {
+  position: fixed;
+  z-index: 1;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: .65rem 1.15rem;
+  border-radius: 999px;
+  background: #116b40;
+  color: #fff;
+  box-shadow: 0 4px 16px #13251b38;
+  font-weight: 750;
+  text-decoration: none;
+}
+.whatsapp:hover { background: #0b5331; }
+@media (max-width: 44rem) {
+  .footer { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 }
