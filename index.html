@@ -1,67 +1,110 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portafolio personal de Darius. Conoce sus proyectos y consulta por servicios de desarrollo web.">
-  <meta name="theme-color" content="#111614">
-  <title>Darius | Portafolio personal</title>
+  <meta name="description" content="Servicios inform&aacute;ticos de Dar&iacute;o Almeida. Chatbots, sitios web, landing pages y apps Android.">
+  <meta name="theme-color" content="#050914">
+  <title>Servicios Inform&aacute;ticos | Dar&iacute;o Almeida</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+  <div class="circuit-background" aria-hidden="true">
+    <pre>using System;
+namespace Services;
+app.MapControllers();
+await service.RunAsync();</pre>
+    <pre>const app = createApp();
+git push origin main
+SELECT id FROM projects;
+dotnet build</pre>
+  </div>
   <a class="skip" href="#principal">Saltar al contenido</a>
-  <header class="header" id="inicio">
-    <div class="wrap bar">
-      <a class="brand" href="#inicio"><span aria-hidden="true">D</span> Darius</a>
-      <nav aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a>
-        <a href="#portafolio">Portafolio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-      </nav>
-      <a class="nav-contact" href="https://wa.me/524493875148">Contacto</a>
-    </div>
+  <header class="site-header wrap" id="inicio">
+    <a class="name" href="#inicio">Dar&iacute;o Almeida</a>
+    <nav aria-label="Navegaci&oacute;n principal">
+      <a href="#sobre-mi">Sobre m&iacute;</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
-  <main id="principal">
-    <section class="hero" aria-labelledby="titulo">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Portafolio personal</p>
-          <h1 id="titulo">Del primer boceto <em>al sitio web.</em></h1>
-          <p class="intro">Soy Darius. Si tienes una idea para tu negocio o un sitio que quieres mejorar, hablemos de lo que necesitas construir.</p>
-          <div class="actions">
-            <a class="button primary" href="https://wa.me/524493875148">Hablemos de tu idea</a>
-            <a class="button outline" href="#servicios">Ver servicios</a>
+  <main id="principal" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="titulo">
+      <div class="hero-copy">
+        <h1 id="titulo">Servicios <span>Inform&aacute;ticos</span></h1>
+        <p class="hero-intro">Dise&ntilde;amos tu software a la medida. Automatizamos procesos y modernizamos sistemas obsoletos.</p>
+        <p class="hero-offerings">Chatbots, sitios web, landing pages y aplicaciones Android.</p>
+        <ul class="tech" aria-label="Tecnolog&iacute;as destacadas">
+          <li>.NET Core</li><li>React</li><li>Azure</li><li>SQL</li><li>Apps Android</li><li>Cloud</li><li>GitHub</li><li>HTML y CSS</li>
+        </ul>
+        <div class="hero-links">
+          <a class="cta" href="#servicios">Ver servicios</a>
+          <a href="https://www.linkedin.com/in/dar%C3%ADoalmeida/">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+    <div class="content wrap">
+      <section id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+        <div class="about">
+          <div>
+            <h2 id="titulo-sobre-mi">Sobre m&iacute;</h2>
+            <p class="lead">Dar&iacute;o Almeida</p>
+            <p>Senior Full Stack Developer</p>
+            <a class="text-link" href="https://www.linkedin.com/in/dar%C3%ADoalmeida/">Ver perfil en LinkedIn</a>
+          </div>
+          <div>
+            <h3 class="experience-heading">Experiencia t&eacute;cnica</h3>
+            <ul class="experience-list">
+              <li>
+                <h4>Desarrollo Full Stack</h4>
+                <p>Dise&ntilde;o y desarrollo de software a medida, desde la interfaz hasta la l&oacute;gica de negocio y la base de datos.</p>
+                <ul class="tags" aria-label="Tecnolog&iacute;as"><li>.NET Core</li><li>React</li><li>SQL</li></ul>
+              </li>
+              <li>
+                <h4>Desarrollo asistido por IA</h4>
+                <p>Dise&ntilde;o de software con apoyo de IA y desarrollo guiado por especificaciones (Spec-Driven Development).</p>
+                <ul class="tags" aria-label="Enfoques"><li>IA aplicada</li><li>Spec-Driven Development</li></ul>
+              </li>
+              <li>
+                <h4>Cloud y aplicaciones m&oacute;viles</h4>
+                <p>Desarrollo de aplicaciones web y Android, con Azure para soluciones en la nube y GitHub para el control de versiones.</p>
+                <ul class="tags" aria-label="Tecnolog&iacute;as"><li>Azure</li><li>Cloud</li><li>GitHub</li><li>Apps Android</li></ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="art" aria-hidden="true">
-          <div class="orbit orbit-outer"></div>
-          <div class="orbit orbit-inner"></div>
-          <div class="symbol"><i></i><i></i><i></i></div>
-        </div>
-      </div>
-    </section>
-    <section class="section wrap" id="servicios" aria-labelledby="titulo-servicios">
-      <p class="eyebrow">Servicios</p>
-      <h2 id="titulo-servicios">¿Qué necesitas construir?</h2>
-      <div class="cards">
-        <article><h3>Páginas web</h3><p>Presenta tu negocio, tu trabajo o tus servicios en una página que se pueda consultar desde cualquier dispositivo.</p></article>
-        <article><h3>Aplicaciones web</h3><p>Plantea una herramienta en línea para organizar información, gestionar solicitudes o simplificar una tarea de tu equipo.</p></article>
-        <article><h3>Mejoras a tu sitio</h3><p>Cuéntame qué quieres cambiar en tu página actual, desde la navegación hasta una función que te haga falta.</p></article>
-      </div>
-    </section>
-    <section class="band" id="portafolio" aria-labelledby="titulo-portafolio">
-      <div class="section wrap split">
-        <div><p class="eyebrow">Portafolio</p><h2 id="titulo-portafolio">Proyectos y código</h2></div>
-        <div><p>Este sitio es el primer proyecto del portafolio. Puedes consultar su código y explorar mis repositorios en GitHub.</p>
-        <a class="text-link" href="https://github.com/Darius85">Explorar GitHub</a></div>
-      </div>
-    </section>
-    <section class="section wrap split" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
-      <div><p class="eyebrow">Sobre mí</p><h2 id="titulo-sobre-mi">Soy Darius</h2></div>
-      <p>Me interesa entender qué debe resolver un sitio antes de decidir cómo construirlo. Puedes contarme quién lo va a usar y qué necesita poder hacer.</p>
-    </section>
+      </section>
+      <section id="servicios" aria-labelledby="titulo-servicios">
+        <h2 id="titulo-servicios">Servicios</h2>
+        <ul class="service-list">
+          <li><h3>Software a medida</h3><p>Dise&ntilde;amos herramientas para las necesidades y la forma de trabajar de tu equipo.</p></li>
+          <li><h3>Automatizaci&oacute;n de procesos</h3><p>Conectamos herramientas y reducimos tareas repetitivas, como capturar datos o dar seguimiento a solicitudes.</p></li>
+          <li><h3>Modernizaci&oacute;n de sistemas</h3><p>Actualizamos aplicaciones obsoletas por etapas, empezando por las funciones que m&aacute;s necesita tu equipo.</p></li>
+          <li><h3>Chatbots</h3><p>Automatiza respuestas a preguntas frecuentes y facilita el primer contacto con tus clientes.</p></li>
+          <li><h3>Sitios web</h3><p>Presenta tu negocio, tu trabajo o tus servicios en un sitio adaptable a cualquier dispositivo.</p></li>
+          <li><h3>Landing pages</h3><p>Crea una p&aacute;gina para lanzar un servicio, promocionar una campa&ntilde;a o recibir solicitudes.</p></li>
+          <li><h3>Apps Android</h3><p>Ofrece a tus clientes o a tu equipo una herramienta m&oacute;vil para las tareas que realizan a diario.</p></li>
+          <li><h3>Aplicaciones web</h3><p>Organiza informaci&oacute;n y gestiona solicitudes desde el navegador.</p></li>
+          <li><h3>Mejoras a tu sitio</h3><p>Mejora la navegaci&oacute;n o incorpora una funci&oacute;n a tu p&aacute;gina actual.</p></li>
+        </ul>
+      </section>
+      <section id="portafolio" aria-labelledby="titulo-portafolio">
+        <h2 id="titulo-portafolio">Proyectos</h2>
+        <article class="project">
+          <h3>Portafolio personal</h3>
+          <p>Este sitio reúne mis servicios y formas de contacto en una página adaptable a escritorio y celular.</p>
+          <ul class="tags" aria-label="Tecnologías"><li>HTML</li><li>CSS</li><li>GitHub Pages</li></ul>
+        </article>
+      </section>
+      <section id="contacto" aria-labelledby="titulo-contacto">
+        <h2 id="titulo-contacto">Contacto</h2>
+        <p>Cuéntame qué quieres construir o qué te gustaría mejorar en tu sitio.</p>
+        <a class="text-link" href="https://wa.me/524493875148">Escríbeme por WhatsApp</a>
+      </section>
+      <footer><a href="#inicio">Volver al inicio</a></footer>
+    </div>
   </main>
-  <footer class="footer"><div class="wrap bar"><span>Darius</span><a href="#inicio">Volver al inicio</a></div></footer>
   <a class="whatsapp" href="https://wa.me/524493875148" aria-label="Cu&eacute;ntame tu idea por WhatsApp">
     <span class="whatsapp-label" aria-hidden="true">&iexcl;Cu&eacute;ntame tu idea!</span>
     <span class="whatsapp-icon" aria-hidden="true">
